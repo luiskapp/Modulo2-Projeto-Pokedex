@@ -1,3 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-image: url('/img/fundo.jpg');
+   
+}
+
+/* ---------------------------------------------------NavBar --------------------------------------------- */
+body header nav{
+    display:flex;
+    width: 100%;
+    height: 3.5rem;
+    box-shadow: 2px 1px 4px rgb(73, 73, 73);
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+body header nav img{
+    width: 15%;
+    height: 100%;
+    min-width: 100px;
+    min-height: 30px;
+}
+body header nav ul{
+    display:flex;
+    width: 70%;
+    height: 50%;
+    list-style: none;
+    align-items: flex-end;
+    list-style: none;
+    text-align: center;
+}
+body header nav ul li{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    font-size: 120%;  
+    border-left: solid .8px rgba(177, 177, 177, 0.644);
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: .8%;
+}
+body header nav ul #inicio{
+    border-bottom: 4px solid red ;
+    transition: .2s;
+}
+body header nav ul #inicio:hover{
+    background-color:  red ;
+    color: white;
+}
+body header nav ul #pokedex{
+    border-bottom: 4px solid green ;
+    transition: .2s;
+}
+body header nav ul #pokedex:hover{
+    background-color:  green ;
+    color: white;
+}
+body header nav ul #cadastro{
+    border-bottom: 4px solid yellow ;
+    transition: .2s;
+}
+body header nav ul #cadastro:hover{
+    background-color:  yellow ;
+    color: white;
+}
+body header nav ul #treinadores{
+    border-bottom: 4px solid blue ;
+    transition: .2s;
+}  
+body header nav ul #treinadores:hover{
+    background-color:  blue ;
+    color: white;
 }
