@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const pokedex = []
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -13,7 +14,7 @@ app.get("/", (req, res) => {
 app.get("/cadastro", (req, res) => {
     res.render("index");
 });
-app.get("/detalhes", (req, res) => {
+app.get("/detalhe", (req, res) => {
     res.render("index");
 });
 
