@@ -10,51 +10,39 @@
 <body>
     <header>
         <nav>
-<<<<<<< HEAD
         <img id="pokeLogo" src="/img/pokemon-logo.png" alt=" logo" width=" 130px">
-=======
-        <img id="pokeLogo" src="/img/pokemon-logo.png" alt=" logo" width=" 150px">
->>>>>>> 0e38ede9a2bac0297b24bbff5d9acd5f10cc900c
         <ul>
             <a href="#"><li id="navA"><p>Início</p></li></a>
-            <a href="#"><li id="navB"><p>Pokedéx</p></li></a>
+            <a href="#pokedex"><li id="navB"><p>Pokedéx</p></li></a>
             <a href="#"><li id="navC"><p>Cadastro</p></li></a>
             <a href="#"><li id="navD"><p>Treinadores</p></li></a>
         </ul>
         </nav>
     </header>
 
-    <section class="gcard">
-        <section>
+    <h1>Pokedéx</h1>
+
+    <main class="gcard">
+
+        <section id="pokedex">
             <div id="busca"><input type="search"><button>pesquisar</button></div>
-            <div id="busca"><input type="opction"><button>^</button></div>
-        </section>
-        <section>
-            <ul>
-                <li class="card">
-                    <figure><img src="/img/pk1.png" alt="pokemon" width="100px"></figure>
-                </li>
-                <li class="card"><img src="/img/pk1.png" alt="pokemon" width="100px"></li>
-                <li class="card"><img src="/img/pk1.png" alt="pokemon" width="100px"></li>
-            </ul>
+            <div id="filtro"><input type="option"><button>^</button></div>
         </section>
 
-    <h1>Pokedéx</h1>
-    <section>
-        <span class="gcard">
-            <span>
-                <div id="busca"><input type="search"><button>pesquisar</button></div>
-            </span>
+        <section id="pokemon">
             <% pokedex.forEach((pokemon) => { %>
-            <div class="card">
-                <h2 class="nome"><%=pokemon.nome%></h2>
-                <img class="imagem" src="<%=pokemon.imagem%>" alt="">
-                <h3 class="tipo"><%=pokemon.tipo%> </h3>
-            </div>
-            <% }) %>
-        </span>
->>>>>>> daf8a1820e0211967ae713a64b9f09936007e304
-    </section>
-    <footer class="rodape">Todos os direitos resevados!</footer>
+                <div class="card">
+                    <h2 class="nome"><%=pokemon.nome%></h2>
+                    <img class="imagem" src="<%=pokemon.imagem%>" alt="">
+                    <h3 class="tipo"><%=pokemon.tipo%> </h3>
+                </div>
+                <% }) %>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        Todos os direitos resevados!
+    </footer>
 </body>
 </html>

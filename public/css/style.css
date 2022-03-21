@@ -8,7 +8,7 @@ body{
 }
 .gcard{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);; ;
     margin-top: 5%;
     margin-left: 10%;
@@ -17,27 +17,24 @@ body{
     background-color: rgba(240, 248, 255, 0.658);
     gap: 20px;
 }
-section ul {
+section #pokemon {
     display: flex;
-
     flex-direction: row;
-    justify-items: stretch;
+    flex-wrap: nowrap;
+    width: 100%;
     justify-content: space-between;
-    list-style: none;
     gap: 10px;
 }
-section li {
+section .card {
     display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-    list-style: none;
+    /* justify-items: flex-start; */
     flex-direction: column;
     justify-content: space-evenly;
 
     border-radius: 10px;
-    padding: 60px;
-    max-width: 100px;
-    max-height: 200px;
+    /* padding: 60px; */
+    width: 100px;
+    height: 200px;
     background-color: rgb(226, 226, 226);
     box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);; ;
 }
