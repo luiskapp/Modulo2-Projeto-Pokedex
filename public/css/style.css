@@ -20,7 +20,6 @@ body{
 section #pokemon {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between;
     gap: 10px;
