@@ -10,6 +10,7 @@
 <body>
     <header>
         <nav>
+
         <img id="pokeLogo" src="/img/pokemon-logo.png" alt=" logo" width=" 130px">
         <ul>
             <a href="#"><li id="navA"><p>Início</p></li></a>
@@ -20,29 +21,32 @@
         </nav>
     </header>
 
-    <h1>Pokedéx</h1>
-
     <main class="gcard">
 
         <section id="pokedex">
             <div id="busca"><input type="search"><button>pesquisar</button></div>
             <div id="filtro"><input type="option"><button>^</button></div>
         </section>
-
-        <section id="pokemon">
-            <% pokedex.forEach((pokemon) => { %>
+        
+        <article>
+            <div id="pokemon">
+                <% pokedex.forEach((pokemon) => { %>
                 <div class="card">
+                    <figure>
+                        <img class="imagem" src="<%=pokemon.imagem%>" alt="" width="120">
+                    </figure>
                     <h2 class="nome"><%=pokemon.nome%></h2>
-                    <img class="imagem" src="<%=pokemon.imagem%>" alt="">
-                    <h3 class="tipo"><%=pokemon.tipo%> </h3>
+                    <h3 class="tipo"><%=pokemon.tipo%></h3>
+                    <h3 class="tipo"><%=pokemon.tipo2%></h3>
                 </div>
                 <% }) %>
-        </section>
-
+            </div>
+        </article>
     </main>
 
     <footer class="rodape">
         Todos os direitos resevados!
     </footer>
+    
 </body>
 </html>
