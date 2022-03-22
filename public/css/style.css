@@ -19,7 +19,6 @@ body{
 }
 section ul {
     display: flex;
-
     flex-direction: row;
     justify-items: stretch;
     justify-content: space-between;
@@ -33,7 +32,6 @@ section li {
     list-style: none;
     flex-direction: column;
     justify-content: space-evenly;
-
     border-radius: 10px;
     padding: 60px;
     max-width: 100px;
