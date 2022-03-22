@@ -15,36 +15,87 @@
         <ul>
             <a href="#"><li id="navA"><p>Início</p></li></a>
             <a href="#pokedex"><li id="navB"><p>Pokedéx</p></li></a>
-            <a href="#"><li id="navC"><p>Cadastro</p></li></a>
-            <a href="#"><li id="navD"><p>Treinadores</p></li></a>
+            <a href="#cadastro"><li id="navC"><p>Cadastro</p></li></a>
+            <a href="#treinadores"><li id="navD"><p>Treinadores</p></li></a>
         </ul>
         </nav>
     </header>
 
-    <main class="gcard">
+    <main>
+        <section id="gcard">
 
-        <section id="pokedex">
-            <div id="busca"><input type="search"><button>pesquisar</button></div>
-            <div id="filtro"><input type="option"><button>^</button></div>
-        </section>
-        
-        <article>
-            <div id="pokemon">
-                <% pokedex.forEach((pokemon) => { %>
-                <div class="card">
-                    <figure>
+            <section id="pokedex">
+                <div id="busca"><input type="search"><button>pesquisar</button></div>
+                <div id="filtro"><button>^</button><input type="option"></div>
+            </section>
+            
+            <article>
+                <div id="pokemon">
+                    <% pokedex.forEach((pokemon) => { %>
+                    <div class="card">
                         <img class="imagem" src="<%=pokemon.imagem%>" alt="" width="120">
-                    </figure>
-                    <h2 class="nome"><%=pokemon.nome%></h2>
-                    <h3 class="tipo"><%=pokemon.tipo%></h3>
-                    <h3 class="tipo"><%=pokemon.tipo2%></h3>
+                        <h2 class="nome"><%=pokemon.nome%></h2>
+                        <% pokemon.tipo.forEach((tipo) => { %>
+                        <h3 class="tipo"><%=tipo%></h3>
+                        <%})%>
+                    </div>
+                    <% }) %>
                 </div>
-                <% }) %>
+            </article>
+        </section>
+        <Section id="cadastro">
+            <form action="">
+                <label for="">Número</label>
+                <input type="text" name="numero" id="numero">
+                
+                <label for="">Nome</label>
+                <input type="text" name="nome" id="nome">
+                
+                <label for="">Tipo(s)</label>
+                <input type="text" name="tipo" id="tipo">
+                
+                <label for="">Link da Imagem</label>
+                <input type="text" name="img" id="img">
+                
+                <label for="">Descrição</label>
+                <input type="text" name="descricao" id="descricao">
+                
+                <label for="">Altura</label>
+                <input type="text" name="altura" id="altura">
+                
+                <label for="">Peso</label>
+                <input type="text" name="peso" id="peso">
+                
+                <label for="">Categoria</label>
+                <input type="text" name="categoria" id="categoria">
+                
+                <label for="">Habilidade</label>
+                <input type="text" name="habilidade" id="habilidade">
+
+            </form>
+        </Section>
+        <section id="treinadores">
+            <h2>Treinadores</h2>
+            <div>
+                <article>
+                    <figure>
+                        <img src="https://uploads.metropoles.com/wp-content/uploads/2018/01/10142944/Screenshot_1115-556x400.jpg" alt="" width="10%">
+                        <caption>Tiririca</caption>
+                    </figure>
+                    <p>pior que tá não fica</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://uploads.metropoles.com/wp-content/uploads/2018/01/10142944/Screenshot_1115-556x400.jpg" alt="" width="10%">
+                        <caption>Tiririca</caption>
+                    </figure>
+                    <p>pior que tá não fica</p>
+                </article>
             </div>
-        </article>
+        </section>
     </main>
 
-    <footer class="rodape">
+    <footer id="rodape">
         Todos os direitos resevados!
     </footer>
     
