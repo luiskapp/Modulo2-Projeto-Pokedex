@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -14,36 +16,56 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     height:auto;
-    background-color: rgba(240, 248, 255, 0.658);
-    gap: 20px;
+    background-color: rgba(240, 248, 255, 0.685);
+
 }
-section #pokemon {
+#pokemon {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
 }
-section .card {
-    display: flex;
-    /* justify-items: flex-start; */
-    flex-direction: column;
-    justify-content: space-evenly;
+.card {
+    margin-top: 10px;
     border-radius: 10px;
-    /* padding: 60px; */
+    padding: 60px;
     width: 100px;
     height: 200px;
     background-color: rgb(226, 226, 226);
-    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);; ;
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+}
+.nome{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: larger;
+}
+.tipo{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: smaller;
+    border: 2px solid black;
+    border-radius: 5px;
+    column-gap: 5px;
+
 }
 #busca{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    flex-wrap: nowrap;
     border-radius: 10px;
-    padding: 25px;
+    padding: 2%;
+}
+#filtro{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row-reverse;
+    padding: 2%;
+    margin-top: -48.7px;
 }
 .rodape{
     display: flex;
@@ -64,6 +86,7 @@ body header nav{
     box-shadow: 2px 1px 4px rgb(73, 73, 73);
     align-items: flex-end;
     justify-content: space-evenly;
+    font-family: Karla;
     
 }
 /* body header nav img{
@@ -112,26 +135,26 @@ body header nav ul #navA:hover{
     color: white ;
 }
 body header nav ul #navB{
-    border-bottom: 4px solid green ;
+    border-bottom: 4px solid #8CE376 ;
     transition: .2s;
 }
 body header nav ul #navB:hover{
-    background-color:  green ;
+    background-color:  #8CE376 ;
     color: white;
 }
 body header nav ul #navC{
-    border-bottom: 4px solid yellow ;
+    border-bottom: 4px solid #FDD38B ;
     transition: .2s;
 }
 body header nav ul #navC:hover{
-    background-color:  yellow ;
+    background-color:  #FDD38B ;
     color: white;
 }
 body header nav ul #navD{
-    border-bottom: 4px solid blue ;
+    border-bottom: 4px solid #5676FD ;
     transition: .2s;
 }  
 body header nav ul #navD:hover{
-    background-color:  blue ;
+    background-color: #5676FD ;
     color: white;
 }

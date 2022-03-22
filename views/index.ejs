@@ -10,10 +10,7 @@
 <body>
     <header>
         <nav>
-<<<<<<< HEAD
 
-=======
->>>>>>> dae4a10c0433487aacec0059c166d1b6ccb99e64
         <img id="pokeLogo" src="/img/pokemon-logo.png" alt=" logo" width=" 130px">
         <ul>
             <a href="#"><li id="navA"><p>Início</p></li></a>
@@ -24,54 +21,32 @@
         </nav>
     </header>
 
-    <h1>Pokedéx</h1>
-
     <main class="gcard">
 
         <section id="pokedex">
             <div id="busca"><input type="search"><button>pesquisar</button></div>
-<<<<<<< HEAD
-            <div id="busca"><input type="option"><button>^</button></div>
-        </section>
-        <section>
-            <ul>
-                <li class="card">
-                    <figure><img src="/img/pk1.png" alt="pokemon" width="100px"></figure>
-                </li>
-                <li class="card"><img src="/img/pk1.png" alt="pokemon" width="100px"></li>
-                <li class="card"><img src="/img/pk1.png" alt="pokemon" width="100px"></li>
-            </ul>
-=======
             <div id="filtro"><input type="option"><button>^</button></div>
->>>>>>> dae4a10c0433487aacec0059c166d1b6ccb99e64
         </section>
-
-        <section id="pokemon">
-            <% pokedex.forEach((pokemon) => { %>
-<<<<<<< HEAD
-            <div class="card">
-                <h2 class="nome"><%=pokemon.nome%></h2>
-                <img class="imagem" src="<%=pokemon.imagem%>" alt="">
-                <h3 class="tipo"><%=pokemon.tipo%> </h3>
-            </div>
-            <% }) %>
-        </span>
->>>>>>> daf8a1820e0211967ae713a64b9f09936007e304    </section>
-    <footer class="rodape">Todos os direitos resevados!</footer>
-=======
+        
+        <article>
+            <div id="pokemon">
+                <% pokedex.forEach((pokemon) => { %>
                 <div class="card">
+                    <figure>
+                        <img class="imagem" src="<%=pokemon.imagem%>" alt="" width="120">
+                    </figure>
                     <h2 class="nome"><%=pokemon.nome%></h2>
-                    <img class="imagem" src="<%=pokemon.imagem%>" alt="">
-                    <h3 class="tipo"><%=pokemon.tipo%> </h3>
+                    <h3 class="tipo"><%=pokemon.tipo%></h3>
+                    <h3 class="tipo"><%=pokemon.tipo2%></h3>
                 </div>
                 <% }) %>
-        </section>
-
+            </div>
+        </article>
     </main>
 
     <footer class="rodape">
         Todos os direitos resevados!
     </footer>
->>>>>>> dae4a10c0433487aacec0059c166d1b6ccb99e64
+    
 </body>
 </html>
