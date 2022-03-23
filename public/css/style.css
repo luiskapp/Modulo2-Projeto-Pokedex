@@ -9,6 +9,15 @@ body{
     background-repeat: no-repeat;
     /* font-size: smaller; */
 }
+@media only screen and (max-width: 720px){
+    main #cadastro img{
+        display:none !important;
+    }
+    main #cadastro form{
+        width: 100% !important;
+        
+    }
+}
 @media only screen and (max-width: 700px){
     *{
         font-size: small;
@@ -19,6 +28,7 @@ body{
     header nav img {
         width: 120px !important;
     }
+    
 }
 @media only screen and (max-width: 558px){
     main #gcard #pokedex #filtro{
@@ -34,21 +44,12 @@ body{
     *{
         font-size: smaller;
     }
-    main #cadastro img{
-        display: flex;
-        width: 40%;
-        height: 30%;
-        min-width: 100px;
-        min-height: 100px;
-    }
     header nav img {
         width: 90px !important;
     }
 }
 /* --------------------------------------------------- NavBar --------------------------------------------- */
 header{
-    position: sticky;
-    top:0;
     background-image: linear-gradient(#fff, rgb(188, 220, 238))
 }
 header nav{
@@ -144,17 +145,33 @@ main #gcard{
     min-width: 250px;
     height:auto;
     background-color: rgba(240, 248, 255, 0.685);
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px  ;
+    
 }
 main #gcard #pokedex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 3% 0;
+    margin: 0 0 3% 0;
+    background-color: rgb(233, 34, 34);
+    border-bottom: solid #000 4px;
+    color: white;
+    font-family: Karla, Arial, Helvetica, sans-serif ;
+    text-shadow: 1px 2px 3px gray;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px  ;
+}
+main #gcard #pokedex h2{
+    width: 100%;
+    text-align: center;
+    padding: 1% 0;
+    
 }
 main #gcard #pokedex #busca{
     display: flex;
     justify-content: center;
-    padding: 0 2%;
+    padding: 1% 2%;
     width: 30%;
     min-width: 200px;
 }
@@ -171,7 +188,7 @@ main #gcard #pokedex #busca input{
 main #gcard #pokedex #filtro{
     display: flex;
     justify-content: center;
-    padding: 0 2%;
+    padding: 1% 2%;
     width: 30%;
     min-width: 200px;
 }
@@ -191,7 +208,8 @@ main #gcard article #pokemon {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
     align-items: stretch;
     align-content: center;
 }
@@ -239,7 +257,7 @@ main #gcard article #pokemon .card .imagem{
 /* --------------------------------------------------- Cadastro --------------------------------------------- */
 main #cadastro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
     margin: 5% 0;
     width: 100%;
@@ -248,19 +266,62 @@ main #cadastro {
     background-color: rgba(240, 248, 255, 0.685);
     align-items: center;
     justify-content: space-evenly;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px  ;
+}
+/* main #cadastro {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+    margin: 5% 0;
+    width: 40%;
+    min-width: 250px;
+    height:400px;
+    background-color: rgba(240, 248, 255, 0.685);
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    background-image:url("../img/Pokebola.jpg" ) ;
+} */
+main #cadastro #tituloCadastro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 1% 0;
+    width: 100%;
+    padding: 2% 0 ;
+    gap: 10px;
+    background-color: #8CE376;
+    border-bottom: solid #000 4px;
+    color: white;
+    font-family: Karla, Arial, Helvetica, sans-serif ;
+    text-shadow: 1px 2px 3px gray;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px  ;
+}
+main #cadastro #formulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 main #cadastro form{
     display: flex ;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 50%;
-    padding: 2% 10%;
+    margin: 2% 5%;
+}
+main #cadastro form div{
+    display: flex;
+    justify-content:space-evenly;
 }
 main #cadastro form label{
-   width: 10%;
+   width: 15%;
+   margin: 1%;
+   
 }
 main #cadastro form input{
-    width: 75%
+    width: 50%;
+    margin: 1%;
 }
 
 main #cadastro img{
