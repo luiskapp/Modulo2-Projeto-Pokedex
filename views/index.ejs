@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="/css/style.css" />
-    <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-pesquisar-mais-32.png">
     <title>Pokédex</title>
 </head>
 <body>
@@ -36,8 +35,9 @@
     <main>
         <section id="gcard">
             <form id="pokedex">
+                <h2>Encontre seu Pokemon</h2>
                 <div id="busca">
-                    <img src="./img/icons8-pesquisar-mais-30.png" alt="Buscar..."/>
+                    <img src="/img/icons8-pesquisar-mais-30.png" alt="buscar">
                     <input type="text" id="txtBusca" placeholder="Buscar..."/>
                     <button id="btnBusca">Buscar</button>
                 </div>
@@ -52,135 +52,137 @@
                     </select>
                 </div>
             </form>
-
             <article>
-                <div id="pokemon">
-                    <% pokedex.forEach((pokemon) => { %>
-                    <div class="card">
-                        <img
-                            class="imagem"
-                            src="<%=pokemon.imagem%>"
-                            alt=""
-                            width="120"
-                        />
-                        <h2 class="nome"><%=pokemon.nome%></h2>
-                        <% pokemon.tipo.forEach((tipo) => { %>
-                        <h3 class="tipo"><%=tipo%></h3>
-                        <%})%>
-                    </div>
-                    <% }) %>
-                </div>
-            </article>
-        </section>
-        <Section id="cadastro">
-            <form action="">
-                <div>
-                    <label for="">Número:</label>
-                    <input
-                        type="text"
-                        name="numero"
-                        id="numero"
-                    />
-                </div>
-
-                <div>
-                    <label for="">Nome:</label>
-                    <input
-                        type="text"
-                        name="nome"
-                        id="nome"
-                    />
-                </div>
-
-                <div>
-                    <label for="">Tipo(s):</label>
-                    <input
-                        type="text"
-                        name="tipo"
-                        id="tipo"
-                    />
-                </div>
-
-                <div>
-                    <label for="">Link da Imagem:</label>
-                    <input type="text" name="img" id="img" />
-                </div>
-
-                <div>
-                    <label for="">Descrição:</label>
-                    <input
-                        type="text"
-                        name="descricao"
-                        id="descricao"
-                    />
-                </div>
-
-                <div>
-                    <label for="">Altura:</label>
-                    <input
-                        type="text"
-                        name="altura"
-                        id="altura"
-                    />
-                </div>
-
-                <div>
-                    <label for="">Peso:</label>
-                    <input
-                        type="text"
-                        name="peso"
-                        id="peso"
-                    />
-                </div>
-
-                <div>
-                    <label for="">Categoria:</label>
-                    <input
-                        type="text"
-                        name="categoria"
-                        id="categoria"
-                    />
-                </div>
-
-                <div>
-                    <label for="">Habilidade:</label>
-                    <input
-                        type="text"
-                        name="habilidade"
-                        id="habilidade"
-                    />
-                </div>
-            </form>
-            <img src="/img/treinadores.png" alt="" />
-        </Section>
-        <section id="treinadores">
-            <h2>Treinadores</h2>
-            <div>
-                <article>
-                    <img
-                        src="https://uploads.metropoles.com/wp-content/uploads/2018/01/10142944/Screenshot_1115-556x400.jpg"
-                        alt=""
-                        width="40%"
-                    />
-                    <h4>Tiririca</h4>
-                    <p>pior que tá não fica</p>
-                </article>
-                <article>
-                    <img
-                        src="https://uploads.metropoles.com/wp-content/uploads/2018/01/10142944/Screenshot_1115-556x400.jpg"
-                        alt=""
-                        width="40%"
-                    />
-                    <h4>Tiririca</h4>
-                    <p>pior que tá não fica</p>
-                </article>
+				<div id="pokemon">
+					<% pokedex.forEach((pokemon) => { %>
+						<div class="card">
+							<img class="imagem" src="<%=pokemon.imagem%>" alt="" width="120"/>
+							<h2 class="nome"><%=pokemon.nome%></h2>
+							<% pokemon.tipo.forEach((tipo) => { %>
+							<h3 class="tipo"><%=tipo%></h3>
+							<%})%>
+						</div>
+					<% }) %>
+				</div>
+			</article>
+		</section>
+		<Section id="cadastro">
+            <div id="tituloCadastro">
+                <h2>Cadastre aqui o Seu Pokemon!</h2>
+                <p>Você pode criar um pokemon do zero ou usar as informações da <a href="https://www.pokemon.com/br/pokedex/" target="_blank">pokedex oficial</a></p>
             </div>
-        </section>
-    </main>
+            <div id="formulario">
+                <form action="">
+                    <div>
+                        <label for="">Número:</label>
+                        <input
+                            type="text"
+                            name="numero"
+                            id="numero"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="">Nome:</label>
+                        <input
+                            type="text"
+                            name="nome"
+                            id="nome"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="">Tipo(s):</label>
+                        <input
+                            type="text"
+                            name="tipo"
+                            id="tipo"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="">Imagem:</label>
+                        <input type="text" name="img" id="img" />
+                    </div>
+
+                    <div>
+                        <label for="">Descrição:</label>
+                        <input
+                            type="text"
+                            name="descricao"
+                            id="descricao"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="">Altura:</label>
+                        <input
+                            type="text"
+                            name="altura"
+                            id="altura"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="">Peso:</label>
+                        <input
+                            type="text"
+                            name="peso"
+                            id="peso"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="">Categoria:</label>
+                        <input
+                            type="text"
+                            name="categoria"
+                            id="categoria"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="">Habilidade:</label>
+                        <input
+                            type="text"
+                            name="habilidade"
+                            id="habilidade"
+                        />
+                    </div>
+                    <div>
+                        <button type="submit">Cadastrar</button>
+                    </div>
+				</form>
+				<img src="/img/treinadores.png" alt="" />
+                </div>
+	    </Section>
+		<section id="treinadores">
+			<h2>Treinadores</h2>
+				<div>
+					<article>
+						<img
+							src="https://uploads.metropoles.com/wp-content/uploads/2018/01/10142944/Screenshot_1115-556x400.jpg"
+							alt=""
+							width="40%"
+						/>
+						<h4>Tiririca</h4>
+						<p>pior que tá não fica</p>
+					</article>
+					<article>
+						<img
+							src="https://uploads.metropoles.com/wp-content/uploads/2018/01/10142944/Screenshot_1115-556x400.jpg"
+							alt=""
+							width="40%"
+						/>
+						<h4>Tiririca</h4>
+						<p>pior que tá não fica</p>
+					</article>
+				</div>
+		</section>
+	</main>
 
     <footer id="rodape">
         Todos os direitos resevados!
     </footer>
     
 </body>
-</html>
