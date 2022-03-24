@@ -91,9 +91,6 @@ const pokedex = [
 app.get("/", (req, res) => {
     res.render("index",{pokedex});
 });
-app.get("/cadastro", (req, res) => {
-    res.render("cadastro",{pokedex});
-});
 app.post("/cadastro", (req,res) =>{
     const pokemon = req.body;
     let tipo = pokemon.tipo.split(", ");
