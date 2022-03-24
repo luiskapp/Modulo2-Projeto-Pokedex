@@ -218,6 +218,21 @@ select{
 }
 
 /* --------------------- Pokemon --------------------- */
+main #gcard article #pokemon a {
+    text-decoration: none;
+    color: black;
+    align-items:center;
+    border-radius: 10px;
+    padding: 2%;
+    width: 15%;
+    min-width: 100px;
+    height: auto;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+    margin: 3% 1%;
+    transition: all .3s ease-in-out;
+    
+}
 main #gcard article #pokemon {
     display: flex;
     flex-direction: row;
@@ -231,17 +246,9 @@ main #gcard article #pokemon .card {
     display: flex;
     flex-direction: column;
     align-items:center;
-    border-radius: 10px;
-    padding: 2%;
-    width: 15%;
-    min-width: 100px;
-    height: auto;
-    background-color: rgb(226, 226, 226);
-    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
-    margin: 3% 1%;
-    transition: all .3s ease-in-out;
+    width: 100%;
 }
-main #gcard article #pokemon .card:hover {
+main #gcard article #pokemon a:hover {
     transform: scale(.98);
     box-shadow: inset 0 0 2em rgb(148, 148, 148);
     position: sticky;
