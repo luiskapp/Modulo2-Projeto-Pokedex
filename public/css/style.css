@@ -325,6 +325,7 @@ main #cadastro form{
     flex-direction: column;
     width: 50%;
     margin: 2% 5%;
+    font-family: Montserrat ;
 }
 main #cadastro form div{
     display: flex;
@@ -343,13 +344,25 @@ main #cadastro form input{
     background-color: rgb(255, 255, 255);
     padding: .8%;
 }
-
 main #cadastro img{
     display: flex;
     width: 40%;
     height: 30%;
     min-width: 230px;
     min-height: 230px;
+
+}
+main #cadastro button{
+    display: flex;
+    border-radius: 10px;
+    background-color: #FDD38B;
+    padding: 1%;
+    margin-top: 3%;
+    border: solid rgba(143, 143, 143, 0.562) .5px ;
+
+}
+main #cadastro button:hover{
+    background-color: #fac56a;
 
 }
 
@@ -381,9 +394,14 @@ main #treinadores div article{
 
 /* --------------------------------------------------- Rodapé --------------------------------------------- */
 
-#rodape{
+.copyright{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Futura Md Bt;
+    background-color: rgb(43, 41, 41);
+    color: white;
 }
