@@ -277,6 +277,52 @@ main #gcard article #pokemon .card .tipo{
 main #gcard article #pokemon .card .imagem{
     width:90%;
 }
+
+/*-----------------------------------------------------detalhes-----------------------------------------------*/
+
+main #titulodth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 1% 0;
+    width: 100%;
+    padding: 2% 0 ;
+    gap: 10px;
+    background-color: rgb(233, 34, 34);
+    border-bottom: solid #000 4px;
+    color: white;
+    font-family: Karla;
+    text-shadow: 1px 2px 3px gray;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px  ;
+}
+.tipopk{
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+    background-color: #e49f9f;
+    width: 30%;
+    height: 30%;
+    margin-top: 4%;
+    content: 50;
+}
+.tipo{
+    font-family: Montserrat;
+    font-size:small;
+    width: 100%;
+    margin: 1% 0;
+    content: 50;
+    text-align: center;
+}
+.tipoA{
+    font-family: Montserrat;
+    font-size:small;
+    width: 100%;
+    margin: 1% 0;
+    content: 50;
+    text-align: center;
+}
+
 /* --------------------------------------------------- Cadastro --------------------------------------------- */
 main #cadastro {
     display: flex;
