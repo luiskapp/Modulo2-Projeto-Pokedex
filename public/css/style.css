@@ -194,6 +194,7 @@ main #gcard #pokedex #busca button:hover{
     border:none;
     width:191px;
     height:32px;
+    outline:none;
 }
 #Busca img{
     float:left;
@@ -342,6 +343,7 @@ main #cadastro form input{
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
     padding: .8%;
+    outline:none;
 }
 
 main #cadastro img{

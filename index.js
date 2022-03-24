@@ -1,5 +1,13 @@
 const express = require("express");
 const path = require("path");
+const app = express();
+
+const port = process.env.PORT || 3000;
+
+app.set("view engine", "ejs");
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded());
+
 const pokedex = [
     {
         numero: 001,
@@ -80,17 +88,19 @@ const pokedex = [
     },
 ]
 
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "public")));
-
 app.get("/", (req, res) => {
     res.render("index", {pokedex});
 });
 app.get("/cadastro", (req, res) => {
     res.render("cadastro", {pokedex});
+});
+app.post("/cadastro", (req,res) =>{
+    const pokemon = req.body;
+    let tipo = pokemon.tipo.split(", ");
+    pokemon.tipo = tipo
+    pokedex.push(pokemon);
+
+    res.redirect("/");
 });
 app.get("/detalhes", (req, res) => {
     res.render("detalhes", {pokedex});
