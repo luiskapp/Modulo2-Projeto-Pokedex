@@ -10,6 +10,7 @@ app.use(express.urlencoded());
 
 const pokedex = [
     {
+        id: 1,
         numero: 001,
         nome: "Bulbasaur",
         tipo: ["Grass", "Poison"],
@@ -20,7 +21,8 @@ const pokedex = [
         categoria: "Seed",
         habilidade: "Overgrow"
     },
-    {
+    {   
+        id: 2,
         numero: 004,
         nome: "Charmander",
         tipo: ["Fire"],
@@ -31,7 +33,32 @@ const pokedex = [
         categoria: "Lizard",
         habilidade: "Blaze"
     },
-    {
+    {   
+        id: 3,
+        numero: 007,
+        nome: "Squirtle",
+        tipo: ["Water"],
+        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
+        altura: "0.5 m",
+        peso: "9.0 kg",
+        categoria: "Tiny Turtle",
+        habilidade: "Torrent"
+    },
+    {   
+        id: 4,
+        numero: 007,
+        nome: "Squirtle",
+        tipo: ["Water"],
+        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
+        altura: "0.5 m",
+        peso: "9.0 kg",
+        categoria: "Tiny Turtle",
+        habilidade: "Torrent"
+    },
+    {   
+        id: 5,
         numero: 007,
         nome: "Squirtle",
         tipo: ["Water"],
@@ -43,6 +70,7 @@ const pokedex = [
         habilidade: "Torrent"
     },
     {
+        id: 6,
         numero: 007,
         nome: "Squirtle",
         tipo: ["Water"],
@@ -54,28 +82,7 @@ const pokedex = [
         habilidade: "Torrent"
     },
     {
-        numero: 007,
-        nome: "Squirtle",
-        tipo: ["Water"],
-        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
-        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
-        altura: "0.5 m",
-        peso: "9.0 kg",
-        categoria: "Tiny Turtle",
-        habilidade: "Torrent"
-    },
-    {
-        numero: 007,
-        nome: "Squirtle",
-        tipo: ["Water"],
-        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
-        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
-        altura: "0.5 m",
-        peso: "9.0 kg",
-        categoria: "Tiny Turtle",
-        habilidade: "Torrent"
-    },
-    {
+        id: 7,
         numero: 007,
         nome: "Squirtle",
         tipo: ["Water"],
@@ -91,20 +98,33 @@ const pokedex = [
 app.get("/", (req, res) => {
     res.render("index", {pokedex});
 });
+
+
 app.get("/cadastro", (req, res) => {
     res.render("cadastro", {pokedex});
 });
 app.post("/cadastro", (req,res) =>{
     const pokemon = req.body;
     let tipo = pokemon.tipo.split(", ");
-    pokemon.tipo = tipo
+    pokemon.tipo = tipo;
+    pokemon.id = pokedex.length + 1
     pokedex.push(pokemon);
-
     res.redirect("/");
 });
-app.get("/detalhes", (req, res) => {
-    res.render("detalhes", {pokedex});
+
+
+
+app.get("/detalhes/:id", (req, res) => {
+    const id = req.params.id;    
+    const pokemon = pokedex.find(pokemon => pokemon.id == id);
+    console.log(pokemon)
+    res.render("detalhes", {pokemon});
 });
+
+
+app.get("/treinadores", (req,res) => {
+    res.render("treinadores")
+})
 
 app.listen(port, () =>
   console.log(`Servidor rodando em http://localhost:${port}`)
