@@ -27,17 +27,24 @@
                         <a href="/detalhes/<%= pokemon.id %>">
 						<div class="card" class="detalhes">
 							<img class="imagem" src="<%=pokemon.imagem%>" alt="" width="180"/>
+                            <h4 class="tipoD"><%=pokemon.descricao%></h4>
 						</div>
                         </a>
+                        <div class="tipoimg">
+                            <img src="/img/tipo-2.png"width="40px" >
+                            <img src="/img/redimensionar.png" width="30px">
+                            <img src="/img/peso.png" width="50px">
+                            <img src="/img/estrela.png"width="40px">
+                            <img src="/img/habilidades.png"width="40px">
+                        </div>
                         <div class="tipopk">
                             <% pokemon.tipo.forEach((tipo) => { %>
-                                <h3 class="tipo">Tipo:<%=tipo%></h3>
+                                <h4 class="tipoT">Tipo - <%=tipo%></h4>
                                 <% })%>
-                                <h4 class="tipo">Descrição:<%=pokemon.descricao%></h4>
-                                <h4 class="tipoA"><img src="/public/img/altura.png">Altura:<%=pokemon.altura%></h4>
-                                <h4 class="tipo">Peso:<%=pokemon.peso%> </h4>
-                                <h4 class="tipo">Categoria:<%=pokemon.categoria%></h3>
-                                <h4 class="tipo">Habilidade:<%=pokemon.habilidade%></h3>
+                                <h4 class="tipoA">Altura - <%=pokemon.altura%></h4>
+                                <h4 class="tipoP">Peso - <%=pokemon.peso%> </h4>
+                                <h4 class="tipoC">Categoria - <%=pokemon.categoria%></h3>
+                                <h4 class="tipoH">Habilidade - <%=pokemon.habilidade%></h3>
                         </div>
                     </div>
                 </article>
