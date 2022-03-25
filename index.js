@@ -55,6 +55,7 @@ app.get("/", (req, res) => {
 app.get("/cadastro", (req, res) => {
     res.render("cadastro", {pokedex});
 });
+
 app.post("/cadastro", (req,res) =>{
     const pokemon = req.body;
     let tipo = pokemon.tipo.split(", ");
@@ -69,7 +70,6 @@ app.post("/cadastro", (req,res) =>{
 app.get("/detalhes/:id", (req, res) => {
     const id = req.params.id;    
     const pokemon = pokedex.find(pokemon => pokemon.id == id);
-    console.log(pokemon)
     res.render("detalhes", {pokemon});
 });
 
