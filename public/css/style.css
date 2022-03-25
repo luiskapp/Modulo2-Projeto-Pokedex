@@ -496,10 +496,11 @@ main #treinadores #tituloTreinadores {
     border-top-left-radius: 30px ;
     border-top-right-radius: 30px  ;
 }
-main #treinadores div{
+main #treinadores #container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 main #treinadores div article{
     display: flex;
@@ -511,6 +512,7 @@ main #treinadores div article{
     text-align: center;
     padding: 1%;
     font-family: Montserrat ;
+    width: 50%;
 }
 main #treinadores div article .autor{
     display: flex;

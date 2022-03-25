@@ -38,9 +38,11 @@
                             <img src="/img/habilidades.png"width="40px">
                         </div>
                         <div class="tipopk">
+                            <div class="type">
                             <% pokemon.tipo.forEach((tipo) => { %>
                                 <h4 class="tipoT">Tipo - <%=tipo%></h4>
                                 <% })%>
+                            </div>
                                 <h4 class="tipoA">Altura - <%=pokemon.altura%></h4>
                                 <h4 class="tipoP">Peso - <%=pokemon.peso%> </h4>
                                 <h4 class="tipoC">Categoria - <%=pokemon.categoria%></h3>
