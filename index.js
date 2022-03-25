@@ -45,54 +45,6 @@ const pokedex = [
         categoria: "Tiny Turtle",
         habilidade: "Torrent"
     },
-    {   
-        id: 4,
-        numero: 007,
-        nome: "Squirtle",
-        tipo: ["Water"],
-        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
-        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
-        altura: "0.5 m",
-        peso: "9.0 kg",
-        categoria: "Tiny Turtle",
-        habilidade: "Torrent"
-    },
-    {   
-        id: 5,
-        numero: 007,
-        nome: "Squirtle",
-        tipo: ["Water"],
-        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
-        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
-        altura: "0.5 m",
-        peso: "9.0 kg",
-        categoria: "Tiny Turtle",
-        habilidade: "Torrent"
-    },
-    {
-        id: 6,
-        numero: 007,
-        nome: "Squirtle",
-        tipo: ["Water"],
-        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
-        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
-        altura: "0.5 m",
-        peso: "9.0 kg",
-        categoria: "Tiny Turtle",
-        habilidade: "Torrent"
-    },
-    {
-        id: 7,
-        numero: 007,
-        nome: "Squirtle",
-        tipo: ["Water"],
-        imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
-        descricao: "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
-        altura: "0.5 m",
-        peso: "9.0 kg",
-        categoria: "Tiny Turtle",
-        habilidade: "Torrent"
-    },
 ]
 
 app.get("/", (req, res) => {
