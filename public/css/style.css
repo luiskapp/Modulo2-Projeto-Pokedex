@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Red+Hat+Mono&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -297,30 +298,80 @@ main #titulodth {
     border-top-right-radius: 30px  ;
 }
 .tipopk{
-    border: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3% 0%;
+    margin-top: 2%;
+    height: fit-content;
+    gap:30px;
+    font-family: Inconsolata;
+    font-size:small;
+}
+.tipoimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 3.5%;
+    padding: .9%;
+    height: fit-content;
+    gap:10px;
+}
+.tipoA{
+    padding: 2%;
+    size: 1%;
+    width: 100%;
+    content: 50;
+    text-align:center;
     border-radius: 5px;
     box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
     background-color: #e49f9f;
-    width: 30%;
-    height: 30%;
-    margin-top: 4%;
-    content: 50;
 }
-.tipo{
-    font-family: Montserrat;
-    font-size:small;
+.tipoT{
+    padding: 2%;
+    size: 1%;
     width: 100%;
-    margin: 1% 0;
     content: 50;
-    text-align: center;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+    background-color: #e49f9f;
 }
-.tipoA{
-    font-family: Montserrat;
+.tipoD{
+    font-family: Inconsolata;
     font-size:small;
+    text-align:justify;
+
+}
+.tipoP{
+    padding: 2%;
+    size: 1%;
     width: 100%;
-    margin: 1% 0;
     content: 50;
-    text-align: center;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+    background-color: #e49f9f;
+}
+.tipoC{
+    padding: 2%;
+    size: 1%;
+    width: 110%;
+    content: 50;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+    background-color: #e49f9f;
+}
+.tipoH{
+    padding: 2%;
+    size: 1%;
+    width: 110%;
+    content: 50;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
+    background-color: #e49f9f;
 }
 
 /* --------------------------------------------------- Cadastro --------------------------------------------- */
