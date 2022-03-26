@@ -14,7 +14,6 @@ body{
     background-repeat: repeat;
     display: flex;
     flex-direction: column;
-    /* font-size: smaller; */
 }
 @media only screen and (max-width: 720px){
     main #cadastro img{
@@ -141,6 +140,7 @@ header nav ul #navD:hover{
 main{
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 main #gcard{
     display: flex;
@@ -284,6 +284,9 @@ main #gcard article #pokemon .card .imagem{
 }
 
 /*-----------------------------------------------------detalhes-----------------------------------------------*/
+main #pokemonDet{
+    display: flex;
+}
 
 main #titulodth {
     display: flex;
@@ -301,18 +304,6 @@ main #titulodth {
     border-top-left-radius: 30px ;
     border-top-right-radius: 30px  ;
 }
-.tipopk{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 3% 0%;
-    margin-top: 1.4%;
-    width: 40%;
-    height: fit-content;
-    gap:30px;
-    font-family: Inconsolata;
-    font-size:small;
-}
 .tipoimg{
     display: flex;
     flex-direction: column;
@@ -321,21 +312,23 @@ main #titulodth {
     padding: .9%;
     height: fit-content;
     gap:28px;
+    width: 50%;
 }
-.tipoA{
-    padding: 2%;
-    size: 1%;
-    width: 45%;
-    content: 50;
-    text-align:center;
-    border-radius: 5px;
-    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
-    background-color: #e49f9f;
+.tipoimg div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap:5%;
 }
-.tipoT{
-    padding: 2%;
-    size: 1%;
-    width: 45%;
+.tipoimg div img{
+    height: 30px;
+    /* width: 10%; */
+}
+.tipos{
+    padding: 1%;
+    /* size: 1%; */
+    width: 30%;
     content: 50;
     text-align:center;
     border-radius: 5px;
@@ -346,41 +339,11 @@ main #titulodth {
     display: flex;
     justify-content:space-between;
 }
-.tipoD{
+#tipoD{
     font-family: Inconsolata;
     font-size:small;
     text-align:justify;
     margin-top: 25%;
-}
-.tipoP{
-    padding: 2%;
-    size: 1%;
-    width: 45%;
-    content: 50;
-    text-align:center;
-    border-radius: 5px;
-    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
-    background-color: #e49f9f;
-}
-.tipoC{
-    padding: 2%;
-    size: 1%;
-    width: 45%;
-    content: 50;
-    text-align:center;
-    border-radius: 5px;
-    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
-    background-color: #e49f9f;
-}
-.tipoH{
-    padding: 2%;
-    size: 1%;
-    width: 45%;
-    content: 50;
-    text-align:center;
-    border-radius: 5px;
-    box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
-    background-color: #e49f9f;
 }
 
 /* --------------------------------------------------- Cadastro --------------------------------------------- */
@@ -460,6 +423,7 @@ main #cadastro button{
     padding: 1%;
     margin-top: 3%;
     border: solid rgba(143, 143, 143, 0.562) .5px ;
+    outline: none;
 }
 main #cadastro button:hover{
     background-color: #fac56a;
@@ -521,7 +485,7 @@ main #treinadores div article{
 main #treinadores div article .autor{
     display: flex;
     border-radius: 50%;
-    transition: .8s ease-in-out;
+    transition: .5s ease-in-out;
 }
 main #treinadores div article .autor:hover{
     transform: rotatey(180deg);
@@ -568,4 +532,4 @@ footer{
     font-family: Futura Md Bt;
     background-color: rgb(43, 41, 41);
     color: white;
-}
+}***//*/*/**/*/

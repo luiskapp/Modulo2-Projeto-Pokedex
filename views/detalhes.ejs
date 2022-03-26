@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
         <title>Pokédex</title>
     </head>
     <body>
@@ -24,29 +25,35 @@
                 <article>
                     <div id="pokemon">
                         <div id="titulodth"><h2 class="nome" ><%=pokemon.nome%> - Nº <%=pokemon.numero%></h2></div>
-                        <a href="/detalhes/<%= pokemon.id %>">
-						<div class="card" class="detalhes">
+                        <a href="">
+                            <div class="card" class="detalhes">
 							<img class="imagem" src="<%=pokemon.imagem%>" alt="" width="180"/>
-                            <h4 class="tipoD"><%=pokemon.descricao%></h4>
+                            <h4 id="tipoD"><%=pokemon.descricao%></h4>
 						</div>
                         </a>
                         <div class="tipoimg">
-                            <img src="/img/tipo-2.png"width="40px" >
-                            <img src="/img/redimensionar.png" width="30px">
-                            <img src="/img/peso.png" width="45px">
-                            <img src="/img/estrela.png"width="35px">
-                            <img src="/img/habilidades.png"width="35px">
-                        </div>
-                        <div class="tipopk">
-                            <div class="type">
-                            <% pokemon.tipo.forEach((tipo) => { %>
-                                <h4 class="tipoT">Tipo - <%=tipo%></h4>
-                                <% })%>
+                            <div>
+                                <img src="/img/tipo-2.png"  >
+                                <% pokemon.tipo.forEach((tipo) => { %>
+                                    <h4 class="tipos">Tipo - <%=tipo%></h4>
+                                    <% })%>
                             </div>
-                                <h4 class="tipoA">Altura - <%=pokemon.altura%></h4>
-                                <h4 class="tipoP">Peso - <%=pokemon.peso%> </h4>
-                                <h4 class="tipoC">Categoria - <%=pokemon.categoria%></h3>
-                                <h4 class="tipoH">Habilidade - <%=pokemon.habilidade%></h3>
+                            <div>
+                                <img src="/img/redimensionar.png" >
+                                <h4 class="tipos">Altura - <%=pokemon.altura%></h4>
+                            </div>
+                            <div>
+                                <img src="/img/peso.png" >
+                                <h4 class="tipos">Peso - <%=pokemon.peso%> </h4>
+                            </div>
+                            <div>
+                                <img src="/img/estrela.png" >
+                                <h4 class="tipos">Categoria - <%=pokemon.categoria%></h3>
+                            </div>
+                            <div>
+                                <img src="/img/habilidades.png" >
+                                <h4 class="tipos">Habilidade - <%=pokemon.habilidade%></h3>
+                            </div>
                         </div>
                     </div>
                 </article>
