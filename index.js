@@ -46,7 +46,20 @@ const pokedex = [
         categoria: "Tiny Turtle",
         habilidade: "Torrent"
     },
+    {   
+        id: 4,
+        numero: -001,
+        nome: "Pinscher",
+        tipo: ["Normal","Demoníaco"],
+        imagem: "https://pbs.twimg.com/media/DrHwBeWX0AE9XYW.jpg",
+        descricao: "Aparentemente inofencivo, porem com sua habilidade especial, é capaz de de rosnar e latir como um cão de verdade.",
+        altura: "0.2 m",
+        peso: "0.8 kg",
+        categoria: "Canino",
+        habilidade: "Berserk"
+    },
 ]
+
 
 app.get("/", (req, res) => {
     setTimeout(() => {
