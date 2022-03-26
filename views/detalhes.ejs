@@ -33,14 +33,16 @@
                         <div class="tipoimg">
                             <img src="/img/tipo-2.png"width="40px" >
                             <img src="/img/redimensionar.png" width="30px">
-                            <img src="/img/peso.png" width="50px">
-                            <img src="/img/estrela.png"width="40px">
-                            <img src="/img/habilidades.png"width="40px">
+                            <img src="/img/peso.png" width="45px">
+                            <img src="/img/estrela.png"width="35px">
+                            <img src="/img/habilidades.png"width="35px">
                         </div>
                         <div class="tipopk">
+                            <div class="type">
                             <% pokemon.tipo.forEach((tipo) => { %>
                                 <h4 class="tipoT">Tipo - <%=tipo%></h4>
                                 <% })%>
+                            </div>
                                 <h4 class="tipoA">Altura - <%=pokemon.altura%></h4>
                                 <h4 class="tipoP">Peso - <%=pokemon.peso%> </h4>
                                 <h4 class="tipoC">Categoria - <%=pokemon.categoria%></h3>

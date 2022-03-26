@@ -48,7 +48,7 @@ const pokedex = [
 ]
 
 app.get("/", (req, res) => {
-    res.render("index", {pokedex});
+    res.render("index", {pokedex,});
 });
 
 

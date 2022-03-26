@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Red+Hat+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -134,7 +135,6 @@ header nav ul #navD:hover{
     background-image: linear-gradient(transparent, #5676FD 110%);
     color: white;
 }
-
 /* --------------------------------------------------- Pokedéx --------------------------------------------- */
 
 /* --------------------- Pesquisa --------------------- */
@@ -237,7 +237,6 @@ main #gcard article #pokemon a {
     box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
     margin: 3% 1%;
     transition: all .3s ease-in-out;
-    
 }
 main #gcard article #pokemon {
     display: flex;
@@ -297,7 +296,7 @@ main #titulodth {
     background-color: rgb(233, 34, 34);
     border-bottom: solid #000 4px;
     color: white;
-    font-family: Karla;
+    font-family: Didact Gothic;
     text-shadow: 1px 2px 3px gray;
     border-top-left-radius: 30px ;
     border-top-right-radius: 30px  ;
@@ -307,7 +306,8 @@ main #titulodth {
     flex-direction: column;
     justify-content: space-around;
     padding: 3% 0%;
-    margin-top: 2%;
+    margin-top: 1.4%;
+    width: 40%;
     height: fit-content;
     gap:30px;
     font-family: Inconsolata;
@@ -317,15 +317,15 @@ main #titulodth {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 3.5%;
+    margin-top: 2.5%;
     padding: .9%;
     height: fit-content;
-    gap:10px;
+    gap:28px;
 }
 .tipoA{
     padding: 2%;
     size: 1%;
-    width: 100%;
+    width: 45%;
     content: 50;
     text-align:center;
     border-radius: 5px;
@@ -335,23 +335,27 @@ main #titulodth {
 .tipoT{
     padding: 2%;
     size: 1%;
-    width: 100%;
+    width: 45%;
     content: 50;
     text-align:center;
     border-radius: 5px;
     box-shadow: 2px 2px 6px 2px rgba(168, 180, 184, 0.534);
     background-color: #e49f9f;
 }
+.type{
+    display: flex;
+    justify-content:space-between;
+}
 .tipoD{
     font-family: Inconsolata;
     font-size:small;
     text-align:justify;
-
+    margin-top: 25%;
 }
 .tipoP{
     padding: 2%;
     size: 1%;
-    width: 100%;
+    width: 45%;
     content: 50;
     text-align:center;
     border-radius: 5px;
@@ -361,7 +365,7 @@ main #titulodth {
 .tipoC{
     padding: 2%;
     size: 1%;
-    width: 110%;
+    width: 45%;
     content: 50;
     text-align:center;
     border-radius: 5px;
@@ -371,7 +375,7 @@ main #titulodth {
 .tipoH{
     padding: 2%;
     size: 1%;
-    width: 110%;
+    width: 45%;
     content: 50;
     text-align:center;
     border-radius: 5px;
