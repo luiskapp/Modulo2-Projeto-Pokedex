@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+let message = "";
 
 const port = process.env.PORT || 3000;
 
@@ -48,9 +49,11 @@ const pokedex = [
 ]
 
 app.get("/", (req, res) => {
-    res.render("index", {pokedex});
+    setTimeout(() => {
+        message="";
+    }, 1000);
+    res.render("index", {pokedex,message});
 });
-
 
 app.get("/cadastro", (req, res) => {
     res.render("cadastro", {pokedex});
@@ -62,6 +65,7 @@ app.post("/cadastro", (req,res) =>{
     pokemon.tipo = tipo;
     pokemon.id = pokedex.length + 1
     pokedex.push(pokemon);
+    message = 'Pokémon cadastrado com sucesso!';
     res.redirect("/");
 });
 

@@ -20,11 +20,16 @@
                     <a href="/treinadores"><li id="navD"><p>Treinadores</p></li></a>
                 </ul>
             </nav>
+            <% if(message != "") {  %>
+                <section id="message">
+                    <p><%= message %></p> <span id="close">&times;</span>
+                </section>
+            <% }  %>
         </header>
         <main>
             <section id="gcard">
                 <div id="pokedex">
-                    <h2>Seus Pokemons Cadastrados</h2>
+                    <h2>Pokédex</h2>
                 </div>
                 <article>
                     <div id="pokemon">
@@ -45,7 +50,7 @@
 	    </main>
         <footer>
             <p class="copyright">
-                &copy; Pokémon - Todos os direitos reservados - 2022
+                &copy;  Pokémon | Todos os direitos reservados - 2022
             </p>
         </footer>
         <script src="./js/script.js"></script>

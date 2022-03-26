@@ -173,7 +173,8 @@ main #gcard #pokedex{
 main #gcard #pokedex h2{
     width: 100%;
     text-align: center;
-    padding: 1% 0;    
+    padding: 1% 0;
+    font-size: 40px;    
 }
 main #gcard #pokedex #busca{
     display: flex;
@@ -271,7 +272,7 @@ main #gcard article #pokemon .card .nome{
 main #gcard article #pokemon .card .tipo{
     display: flex;
     justify-content: center;
-    font-family: Montserrat;
+    font-family: Karla;
     font-size: smaller;
     width: 80%;
     border: 1px solid black;
@@ -320,6 +321,8 @@ main #titulodth {
     justify-content: flex-start;
     width: 100%;
     gap:5%;
+    font-family: Inconsolata;
+    font-size: small;
 }
 .tipoimg div img{
     height: 30px;
@@ -429,6 +432,36 @@ main #cadastro button:hover{
     background-color: #fac56a;
     cursor: pointer;
 }
+
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(197, 255, 214);
+    color: #004d04;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: Karla;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
 
 /* --------------------------------------------------- Treinadores --------------------------------------------- */
 
