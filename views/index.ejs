@@ -22,7 +22,24 @@
         </header>
         <main>
             <section id="gcard">
-                <div id="pokedex"><h2>Encontre seu Pokemon</h2></div> 
+                <form id="pokedex" action= <% pokedex.forEach((pokemon) => { %> >
+                    <h2>Encontre seu Pokemon</h2>
+                    <div id="busca">
+                        <img src="/img/icons8-pesquisar-mais-30.png" alt="buscar">
+                        <input type="search" id="txtBusca" placeholder="Buscar..."/>
+                        <button id="btnBusca" input="submit" value="submit">Buscar</button>
+                    </div>
+                    <div id="filtro">
+                        <label for="pokemon"></label>
+                        <select id="sortOrder">
+                            <option value="noSort">Organizar resultados por…</option>
+                            <option selected="" value="numberAsc">Menor número primeiro</option>
+                            <option value="numberDesc">Maior número primeiro</option>
+                            <option value="nameAsc">A-Z</option>
+                            <option value="nameDesc">Z-A</option>
+                        </select>
+                    </div>
+                </form>
                 <article>
                     <div id="pokemon">
                         <% pokedex.forEach((pokemon) => { %>
